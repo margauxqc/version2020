@@ -2,10 +2,17 @@ body {
   background: #fafafa;
   font-family: 'PT Sans Caption', sans-serif;
   color: #333;
+  margin: 2em 4em 4em 4em;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
+img.tn {
+  margin:2em 2em 0 0;
+
+}
+
+.mqcheader {
+  float: left;
+  margin: 0 2em 1em 0;
   width: 300px;
   font-size: 18px;
   font-weight: 200;
@@ -15,13 +22,13 @@ body {
   padding: 60px;
 }
 
-.hero-unit h1 {
+.mqcheader h1 {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-.hero-unit h1 .tallline { 
+.mqcheader h1 .tallline { 
   position: relative;
   top: -0.05em;
 }
@@ -31,4 +38,11 @@ body {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.google-contact {
+  float: left;
+  display: block;
+  margin-top: -9px;
+  margin-left: -28px;
 }
