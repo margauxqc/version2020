@@ -10,6 +10,19 @@ img.tn {
 
 }
 
+.content {
+  float: right;
+  width: 100%;
+}
+
+.footer {
+  float: left;
+}
+
+.text {
+  width: 70%;
+}
+
 .mqcheader {
   float: left;
   margin: 0 2em 1em 0;
@@ -45,4 +58,9 @@ img.tn {
   display: block;
   margin-top: -9px;
   margin-left: -28px;
+}
+
+a {
+  text-decoration: none;
+
 }
