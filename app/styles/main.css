@@ -12,15 +12,21 @@ img.tn {
 img.large {
 }
 
-.content {
-}
-
 .footer {
   float: left;
 }
 
 .text {
+  
+  position: absolute;
+  left: 4em;
+  top: 30em;
   width: 70%;
+  max-width: 50em;
+}
+
+.german {
+  color: #676666;
 }
 
 .mqcheader {
