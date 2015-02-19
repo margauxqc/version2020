@@ -19,6 +19,12 @@ img.tn {
   top: 15em;
 }
 
+.paragraph:{
+  position:absolute;
+  left: 0;
+
+}
+
 .text {
   
   position: absolute;
