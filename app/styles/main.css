@@ -20,13 +20,14 @@ img.large {
   
   position: absolute;
   left: 4em;
-  top: 30em;
+  top: 31em;
   width: 70%;
   max-width: 50em;
 }
 
-.german {
-  color: #676666;
+.content {
+  position: absolute;
+  top: 31em;
 }
 
 .mqcheader {
