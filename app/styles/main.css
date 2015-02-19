@@ -9,11 +9,14 @@ img.tn {
   margin: 0 2em 2em 0;
 }
 
-img.large {
-}
-
 .footer {
   float: left;
+}
+
+.topimage {
+  position: absolute;
+  left: 32em;
+  top: 15em;
 }
 
 .text {
