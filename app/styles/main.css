@@ -9,6 +9,12 @@ img.tn {
   margin: 0 2em 2em 0;
 }
 
+img.tn2 {
+  margin: 0em 2em 2em 28.6em;
+
+
+}
+
 .footer {
   float: left;
 }
@@ -17,12 +23,6 @@ img.tn {
   position: absolute;
   left: 32em;
   top: 15em;
-}
-
-.paragraph:{
-  position:absolute;
-  left: 0;
-
 }
 
 .text {
@@ -38,6 +38,7 @@ img.tn {
   position: absolute;
   top: 31em;
 }
+
 
 .mqcheader {
   float: left;
