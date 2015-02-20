@@ -2,6 +2,8 @@
 'use strict';
 // generated on 2015-02-09 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
+var ghpages = require('gh-pages');
+var path = require('path');
 var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
@@ -107,6 +109,13 @@ gulp.task('watch', ['connect'], function () {
 
 gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+});
+
+gulp.task('deploy', ['build'], function (cb) {
+  ghpages.publish(path.join(__dirname, 'dist'), {
+    repo: 'git@github.com:margauxqc/margauxqc.github.io.git',
+    branch: 'master'
+  }, cb);
 });
 
 gulp.task('default', ['clean'], function () {
