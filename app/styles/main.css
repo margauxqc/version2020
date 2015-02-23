@@ -13,10 +13,7 @@ body:after {
 
 img.tn {
   margin: 0 2em 2em 0;
-}
-
-img.tn2 {
-  margin: 0em 2em 2em 28em;
+  max-width: 100%;
 }
 
 .footer {

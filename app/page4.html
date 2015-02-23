@@ -13,6 +13,9 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-grid@^2.4.1" />
+    <script src="//build.origami.ft.com/bundles/js?modules=o-grid@^2.4.1"></script>
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -27,12 +30,23 @@
       <h1>Margaux<br /><span class="tallline">Q</span>uayle<br />Cannon<br />Illustration</h1>
     </div>
 
-    <a name="anchor"><div class="content">
-        <img class="tn" src="images/mrs1.jpg">
-        <img class="tn" src="images/mrs2.jpg">
-        <img class="tn" src="images/mrs3.jpg">
+    <div class="o-grid-row demo-row">
+        <div data-o-grid-colspan="2"><div class="demo-cell">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et tempor nulla. Ut semper vehicula nunc, imperdiet dignissim purus dignissim efficitur. Maecenas lobortis ac mi a molestie. Curabitur vitae bibendum felis. Vivamus non massa ante. Vivamus quis laoreet odio. Nam volutpat magna id rhoncus tincidunt. Vestibulum maximus purus eu neque malesuada, a pellentesque quam congue. Morbi at rutrum libero.
 
-    </div></a>
+    </div></div>
+
+        <div data-o-grid-colspan="10"><div class="demo-cell">
+          <a name="anchor"><img class="tn" src="images/mrs1.jpg"></a>
+          <img class="tn" src="images/mrs2.jpg">
+          <img class="tn" src="images/mrs3.jpg">
+        </div></div>
+
+        <div class="o-grid-row demo-row">
+          <div data-o-grid-colspan="12"><div class="demo-cell"><a href="index.html"><p>Main</p></a>
+        </div></div>
+    </div>
+    
       <!-- build:js scripts/vendor.js -->
       <!-- bower:js -->
       <script src="../bower_components/jquery/dist/jquery.js"></script>
