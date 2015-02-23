@@ -11,10 +11,15 @@ body:after {
   clear: both;
 }
 
+img.img {
+  margin: 0 2em 2em 0;
+  max-width: 100%;
+  display: block;
+}
+
 img.tn {
   margin: 0 2em 2em 0;
   max-width: 100%;
-
 }
 
 .footer {
@@ -43,7 +48,9 @@ ul.breadcrumbs li {
   padding-left: 2em;
 }
   
+.o-grid-row {
 
+}
 
 .mqcheader {
   float: left;
