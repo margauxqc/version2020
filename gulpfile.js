@@ -50,7 +50,7 @@ gulp.task('fonts', function () {
 
 gulp.task('extras', function () {
   return gulp.src([
-    'app/*.*',
+    'app/*',
     '!app/*.html',
     'node_modules/apache-server-configs/dist/.htaccess'
   ], {

@@ -3,6 +3,12 @@ body {
   font-family: 'PT Sans Caption', sans-serif;
   color: #333;
   margin: 2em 4em 4em 4em;
+  vertical-align: baseline;
+}
+
+body:after {
+  content: ' ';
+  clear: both;
 }
 
 img.tn {
@@ -14,7 +20,7 @@ img.tn2 {
 }
 
 .footer {
-  float: left;
+  display: block;
 }
 
 .topimage {
@@ -24,10 +30,7 @@ img.tn2 {
 }
 
 .text {
-  
-  position: absolute;
-  left: 4em;
-  top: 31em;
+ 
   width: 70%;
   max-width: 50em;
 }
