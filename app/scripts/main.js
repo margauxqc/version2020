@@ -1,5 +1,15 @@
 /* jshint devel:true */
-console.log('\'Allo \'Allo!');
+'use strict';
+
+function bindMagicLinks(target) {
+	if (target === undefined) {
+		target = $('body');
+	}
+	target.find('a.magic').click(function(event){
+		event.preventDefault();
+		loadUrl("page1.html");
+	});
+}
 
 function loadUrl (url) {
 	var tempDiv = $('<div>');
@@ -14,14 +24,6 @@ function loadUrl (url) {
 	}, undefined, url);
 }
 
-function bindMagicLinks(target) {
-	if (target === undefined) target = $('body');
-	target.find('a.magic').click(function(event){
-		event.preventDefault();
-		loadUrl("page1.html");
-	});
-}
-
 bindMagicLinks();
 
 window.onpopstate = function (event) {
@@ -30,4 +32,4 @@ window.onpopstate = function (event) {
 		return;
 	}
 	window.location.assign(document.location);
-}
+};
