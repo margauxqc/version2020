@@ -11,8 +11,14 @@ body:after {
   clear: both;
 }
 
-.bottom {
-  float: left;
+.sidebar {
+    width: oGridColspan(4);
+    @include oGridPull(8);
+}
+
+.right {
+    width: oGridColspan(8);
+    @include oGridPush(4);
 }
 
 img.img {
