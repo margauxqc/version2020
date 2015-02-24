@@ -59,7 +59,7 @@ ul.breadcrumbs li {
   padding-left: 2em;
 }
   
-.o-grid-row {
+.o-grid-row, .o-grid-snappy {
   max-width: none;
 }
 
