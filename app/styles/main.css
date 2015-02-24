@@ -11,6 +11,10 @@ body:after {
   clear: both;
 }
 
+.bottom {
+  float: left;
+}
+
 img.img {
   margin: 0 2em 2em 0;
   max-width: 100%;
@@ -32,6 +36,7 @@ img.tn {
   top: 15em;
 }
 
+
 .text {
  
   width: 70%;
@@ -49,7 +54,7 @@ ul.breadcrumbs li {
 }
   
 .o-grid-row {
-
+  max-width: none;
 }
 
 .mqcheader {

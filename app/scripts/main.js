@@ -23,13 +23,3 @@ function loadUrl (url) {
 		url: url
 	}, undefined, url);
 }
-
-bindMagicLinks();
-
-window.onpopstate = function (event) {
-	if (event.state && event.state.url) {
-		loadUrl(event.state.url);
-		return;
-	}
-	window.location.assign(document.location);
-};
