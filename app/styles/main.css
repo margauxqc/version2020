@@ -46,7 +46,8 @@ img.tn {
 
 .masonry.content {
   padding: 0 10px;
-  max-width: 70%;
+  max-width: 80%;
+
 }
 
 ul.breadcrumbs li {
@@ -61,7 +62,7 @@ ul.breadcrumbs li {
 
 .mqcheader {
   float: left;
-  margin: 0 2em 1em 0;
+  margin: 0 2em 3em 0;
   width: 300px;
   font-size: 18px;
   font-weight: 200;
@@ -83,7 +84,7 @@ ul.breadcrumbs li {
 }
 
 .masonry .tn {
-  margin: 0 0 1em 0;
+  margin: 0 0 4em 0;
 }
 
 .browsehappy {

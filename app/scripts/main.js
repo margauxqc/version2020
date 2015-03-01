@@ -29,8 +29,8 @@ window.onload = function () {
 	var msnry = new Masonry( container, {
 
 		// options
-		columnWidth: 110,
+		columnWidth: 5,
 		itemSelector: '.tn',
-		gutter: 200
+		gutter: 174
 	});
 }
