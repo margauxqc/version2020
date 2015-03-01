@@ -11,15 +11,6 @@ body:after {
   clear: both;
 }
 
-.sidebar {
-    width: oGridColspan(4);
-    @include oGridPull(8);
-}
-
-.right {
-    width: oGridColspan(8);
-    @include oGridPush(4);
-}
 
 img.img {
   margin: 0 2em 2em 0;
@@ -53,6 +44,11 @@ img.tn {
   
 }
 
+.masonry.content {
+  padding: 0 10px;
+  max-width: 70%;
+}
+
 ul.breadcrumbs li {
   list-style-type: none;
   display: inline;
@@ -84,6 +80,10 @@ ul.breadcrumbs li {
 .mqcheader h1 .tallline { 
   position: relative;
   top: -0.05em;
+}
+
+.masonry .tn {
+  margin: 0 0 1em 0;
 }
 
 .browsehappy {

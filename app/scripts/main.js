@@ -23,3 +23,14 @@ function loadUrl (url) {
 		url: url
 	}, undefined, url);
 }
+
+window.onload = function () {
+	var container = document.querySelector('.masonry');
+	var msnry = new Masonry( container, {
+
+		// options
+		columnWidth: 110,
+		itemSelector: '.tn',
+		gutter: 200
+	});
+}
