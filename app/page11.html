@@ -5,13 +5,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
-    <title>portfoliosite</title>
+    <title>Margaux Quayle Cannon Illustration London Underground</title>
+
+    <link rel="icon" 
+      type="image/png" 
+      href="http://mqc.ink/favicon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+
+    <link rel="stylesheet" href="//build.origami.ft.com/bundles/css?modules=o-grid@^3.0.0" />
+    <script src="//build.origami.ft.com/bundles/js?modules=o-grid@^3.0.0"></script>
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -22,25 +29,53 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="mqcheader">
-      <h1>Margaux<br /><span class="tallline">Q</span>uayle<br />Cannon<br />Illustration</h1>
+  <div class="o-grid-snappy">
+    <div class="o-grid-row">
+      <div data-o-grid-colspan="S12 M6">
+        <a href="index.html"><div class="mqcheader">
+          <h1>Margaux<br /><span class="tallline">Q</span>uayle<br />Cannon<br />Illustration</h1>
+        </div></a>
+      </div>
+    
+      <div data-o-grid-colspan="S12 M6">
+        <ul class="breadcrumbs">
+          <li><a href="info.html">Contact</a></li>
+          <li><a href="http://society6.com/quayle">Shop</a></li>
+          <li><a href="http://quayle-arts.tumblr.com/tagged/my-art">Tumblr</a></li>
+          <li><a href="contact.html">Subscribe</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div>
+    <div class="content">
+      <div class="o-grid-row">
+        <div data-o-grid-colspan="S12 M10 Mpush2">
+          <img class="img" src="images/old.jpg" id="anchor">
+        </div>
 
-      <p><strong>Coming soon.</strong></p>
+        <div data-o-grid-colspan="S12 M2 Mpull10">
+          <center><p><i>Editorial</i></p></center>
+          "The Invisible Woman"
+        </div>
+      </div>
 
-      <!-- build:js scripts/vendor.js -->
-      <!-- bower:js -->
-      <script src="../bower_components/jquery/dist/jquery.js"></script>
-      <!-- endbower -->
-      <!-- endbuild -->
 
-      <!-- build:js scripts/main.js -->
-      <script src="scripts/main.js"></script>
-      <!-- endbuild -->
+      <div data-o-grid-colspan="12">
+        <a href="index.html"><p>Main</p></a>
+      </div>
     </div>
+  </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+ 
 
     <footer class="footer">
     </footer>
