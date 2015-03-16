@@ -24,7 +24,8 @@ img.tn {
 }
 
 .footer {
-  display: block;
+    display: block;
+    font-size: 12px
 }
 
 .topimage {
@@ -46,8 +47,6 @@ img.tn {
 
 .masonry.content {
   padding: 0 10px;
-  max-width: 80%;
-
 }
 
 ul.breadcrumbs li {
@@ -62,18 +61,13 @@ ul.breadcrumbs li {
 
 .mqcheader {
   float: left;
-  margin: 0 2em 3em 0;
-  width: 300px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
 }
 
 .mqcheader h1 {
-  font-size: 60px;
+  font-size: 35px;
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -103,5 +97,10 @@ ul.breadcrumbs li {
 
 a {
   text-decoration: none;
+  color: #343333;
+}
 
+a:hover {
+  color: #3A5B88;
+  border-bottom: 1px #3A5B88 dashed;
 }
