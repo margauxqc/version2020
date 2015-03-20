@@ -35,14 +35,11 @@ img.tn {
 }
 
 
+
 .text {
  
   width: 70%;
   max-width: 50em;
-}
-
-.content {
-  
 }
 
 .masonry.content {
@@ -70,6 +67,7 @@ ul.breadcrumbs li {
   font-size: 35px;
   line-height: 1;
   letter-spacing: -1px;
+  display: inline-block;
 }
 
 .mqcheader h1 .tallline { 

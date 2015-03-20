@@ -15,3 +15,8 @@ Array.prototype.slice.call(container.querySelectorAll('.tn')).forEach(function (
 		msnry.layout();
 	};
 });
+
+var img = new Image();
+img.classList.add('header-nib');
+img.src = "images/php/nib" + Math.ceil(Math.random() * 5) + ".png";
+$('.butt').before(img);
