@@ -46,10 +46,12 @@ img.tn {
   padding: 0 10px;
 }
 
-ul.breadcrumbs li {
-  list-style-type: none;
-  display: inline;
-  padding-left: 2em;
+.breadcrumbs {
+  padding-bottom: 1.5em;
+}
+
+.breadcrumbs > div {
+  padding-bottom: 0.2em;
 }
   
 .o-grid-row, .o-grid-snappy {
