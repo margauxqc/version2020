@@ -56,7 +56,6 @@
               <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /> <br />
               <i>Your flash is disabled; showing a gif version of the content.  <br />Install the Adobe Flash plugin to see the full interactive page content.
             </a></i>
-            <img class="img" src="images/malz4.gif" id="anchor">
           </div>
         </div>
 
@@ -111,7 +110,11 @@
         "flash.swf", "flashContent",
         "800", "600",
         swfVersionStr, xiSwfUrlStr,
-        flashvars, params, attributes);
+        flashvars, params, attributes, function (options) {
+          if (!options.success) {
+            $('#flashContent').append('<img class="img" src="images/malz1a.gif"><img class="img" src="images/malz4A.gif">');
+          }
+        });
     </script>
 
     <footer class="footer">
