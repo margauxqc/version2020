@@ -46,6 +46,16 @@ img.tn {
   float: right;
 }
 
+.bottomtext {
+  max-width: 800px;
+  position: relative;
+}
+
+.bottomtext >p {
+  position: absolute;
+  bottom: 0;
+}
+
 .text {
  
   width: 70%;
