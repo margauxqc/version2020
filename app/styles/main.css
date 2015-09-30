@@ -11,6 +11,10 @@ body:after {
   clear: both;
 }
 
+img.titleimage {
+  max-height: 200px;
+  margin: 0 15em 0 0;
+}
 
 img.img {
   margin: 0 2em 2em 0;
