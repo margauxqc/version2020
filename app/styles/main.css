@@ -11,6 +11,23 @@ body:after {
   clear: both;
 }
 
+#wrapper .texxxt {
+position:relative;
+top:19em;
+visibility:hidden;
+border-bottom: 1px #3A5B88 dashed;
+}
+
+#wrapper:hover .texxxt {
+visibility:visible;
+}
+
+.tn_shadow {
+  box-shadow: 5px 5px 5px #AFAEAE;
+  margin: 0 2em 2em 0;
+  max-width: 100%;
+}
+
 img.titleimage {
   max-height: 200px;
   margin: 0 15em 0 0;
@@ -24,7 +41,7 @@ img.img {
 
 img.tn {
   margin: 0 2em 2em 0;
-  max-width: 100%;
+  
 }
 
 .footer {
