@@ -15,7 +15,6 @@ body:after {
 position:relative;
 top:19em;
 visibility:hidden;
-border-bottom: 1px #3A5B88 dashed;
 }
 
 #wrapper:hover .texxxt {
