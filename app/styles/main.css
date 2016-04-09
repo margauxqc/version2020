@@ -11,6 +11,11 @@ body:after {
   clear: both;
 }
 
+.subheader {
+  font-size: 20px;
+  margin: 2em 0em 2em 8em;
+}
+
 #wrapper .texxxt {
 position:relative;
 top:19em;
@@ -143,4 +148,8 @@ a {
 a:hover {
   color: #3A5B88;
   border-bottom: 1px #3A5B88 dashed;
+}
+
+.shadow {
+  box-shadow: 5px 5px 5px rgba(0,0,0,.4);
 }
