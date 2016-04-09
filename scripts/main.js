@@ -1,6 +1,6 @@
 /* jshint devel:true */
 'use strict';
-if (Masonry) {
+if (window.Masonry) {
 	var container = document.querySelector('.masonry');
 	var msnry = new Masonry( container, {
 
