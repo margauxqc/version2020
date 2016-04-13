@@ -60,6 +60,7 @@ img.tn {
     display: block;
     font-size: 12px;
     margin: 2em 2em 4em 4em;
+    clear: both;
 }
 
 .topimage {
