@@ -51,6 +51,11 @@ img.img {
   display: block;
 }
 
+img.column {
+  max-width: 100%;
+  display: block;
+}
+
 img.tn {
   margin: 0 2em 2em 0;
   
