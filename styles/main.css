@@ -102,18 +102,39 @@ img.tn {
   max-width: 50em;
 }
 
+.textgrey {
+  color: #8C8C8C;
+  padding-left: .5em;
+}
+
 .masonry.content {
   padding:10px 10px;
 }
 
 .breadcrumbs {
-  padding-bottom: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
 }
 
 .breadcrumbs > div {
   padding-bottom: 0.2em;
 }
   
+.breadcrumbs2 {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*align-content: center;*/
+  height: 3em;
+  /*margin-right: -5em;*/
+}
+
+.breadcrumbs2 > div {
+  padding-bottom: 0.2em;
+}  
 .o-grid-row, .o-grid-snappy {
   max-width: none;
 }
@@ -164,6 +185,7 @@ a:hover {
   color: #3A5B88;
   border-bottom: 1px #3A5B88 dashed;
 }
+
 
 .shadow {
   box-shadow: 5px 5px 5px rgba(0,0,0,.4);
