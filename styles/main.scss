@@ -1,3 +1,6 @@
+---
+---
+
 body {
   background: #fafafa;
   font-family: 'PT Sans Caption', sans-serif;
@@ -21,7 +24,9 @@ h1 {
 }
 
 .top-level-padding {
-  margin: 2em 4em 4em 4em;
+  @media (min-width: 600px) {
+    margin: 2em 4em 4em 4em;
+  }
 }
 
 #wrapper .texxxt {
@@ -96,8 +101,7 @@ img.tn {
   bottom: 0;
 }
 
-.text {
- 
+.text { 
   width: 70%;
   max-width: 50em;
 }
