@@ -66,6 +66,12 @@ img.tn {
   
 }
 
+img.tn.caption {
+  margin: 1em 2em 1em 0;
+  display: inline;
+
+}
+
 .footer {
     display: block;
     font-size: 12px;
@@ -180,6 +186,17 @@ img.tn {
   margin-left: -28px;
 }
 
+.subpicturetextcontent {
+  color: #8C8C8C;
+  cursor: pointer;
+  width: 250px;
+  opacity: 0;
+}
+
+.subpicturetext:hover {
+  opacity: 1;
+}
+
 a {
   text-decoration: none;
   color: #343333;
@@ -188,6 +205,10 @@ a {
 a:hover {
   color: #3A5B88;
   border-bottom: 1px #3A5B88 dashed;
+}
+
+a.tncaption {
+  display: inline-block;
 }
 
 
