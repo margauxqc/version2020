@@ -6,7 +6,7 @@ if (window.Masonry) {
 
 		// options
 		columnWidth: 5,
-		itemSelector: '.tn',
+		itemSelector: 'a',
 		gutter: 174
 	});
 

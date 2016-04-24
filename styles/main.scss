@@ -63,13 +63,16 @@ img.column {
 
 img.tn {
   margin: 0 2em 2em 0;
-  
 }
 
 img.tn.caption {
   margin: 1em 2em 1em 0;
   display: inline;
+}
 
+img.tn.navcaption {
+  margin: 0;
+  display: inline;
 }
 
 .footer {
@@ -186,15 +189,18 @@ img.tn.caption {
   margin-left: -28px;
 }
 
-.subpicturetextcontent {
-  color: #8C8C8C;
+.picturetitle {
+  /*color: #8C8C8C;*/
   cursor: pointer;
-  width: 250px;
   opacity: 0;
+  transition: opacity .2s 1s ease-out;
+  border-bottom: 1px #3A5B88 dashed;
+  display: inline;
 }
 
-.subpicturetext:hover {
+.tncaption:hover .picturetitle {
   opacity: 1;
+  transition-delay: 0s;
 }
 
 a {
@@ -209,6 +215,8 @@ a:hover {
 
 a.tncaption {
   display: inline-block;
+  border-bottom: none;
+  margin-bottom: 1em;
 }
 
 
