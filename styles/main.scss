@@ -244,3 +244,18 @@ a.tncaption {
   border-top: 5px solid #fafafa;
   border-bottom: 2px solid rgba(0,0,0,.2);
 }
+
+.cvlist {
+  list-style: none;
+  padding-left: -1em;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.cvborder {
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 10px 10px 0 rgba(0,0,0,.1);
+  padding: 1em 0 2em 1em;
+}
