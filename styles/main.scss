@@ -147,6 +147,8 @@ img.tn.navcaption {
   /*align-content: center;*/
   height: 3em;
   /*margin-right: -5em;*/
+  transform: skewX(-45deg); 
+  & > div { transform: skewX(45deg); }
 }
 
 .breadcrumbs2 > div {
