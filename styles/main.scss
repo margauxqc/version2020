@@ -1,2 +1,9 @@
 ---
 ---
+.tngrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin: 20px;
+    background: lightblue;
+}
