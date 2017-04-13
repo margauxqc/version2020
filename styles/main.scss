@@ -3,7 +3,29 @@
 .tngrid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 2fr 1fr 2fr;
-    margin: 20px;
-    background: lightblue;
+    grid-template-columns: 1fr 1fr;
+    margin: 10em;
+}
+
+.specialtn {
+    
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+
+}
+
+.splash_1 {
+    background: url(/images/splash_1.png) no-repeat;
+    background-color: red;
+    background-position: bottom right;
+    background-size: contain;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+  width: 100%;
 }
