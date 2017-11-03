@@ -1,28 +1,49 @@
 ---
 ---
+
+
+.redhero span:nth-child(2n+1)
+{
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    color: orangered;
+    line-height: 2em;
+}
+
+
+.borderline {
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding: 0 0 1em 0;
+    margin: 1em;
+    max-width: 700px;
+}
+
 .tngrid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35% 35%;
     margin: 10em;
 }
 
-.specialtn {
+.horizontaltn {
     
-    grid-column-start: 1 ;
-    grid-column-end: 3;
+    grid-column-start: span 2 ;
+    
+    
 
 }
 
 .splash_1 {
     background: url(/images/splash_1.png) no-repeat;
-    background-color: red;
+    background-color: #c71212;
     background-position: bottom right;
     background-size: contain;
     height: 100vh;
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
