@@ -3,7 +3,7 @@
 
 
 .rednav {
-    font-family: 'Merriweather', serif;
+    font-family: 'Expletus Sans', serif;
     font-size: 2em;
     color: orangered;
     line-height: 2em;
@@ -42,7 +42,6 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.17fr 1fr;
-    grid-template-rows: 1fr 1fr;
     margin: 10em;
 }
 .giantgrid {
@@ -130,5 +129,32 @@ footer {
 .backgroundp {
     background: linen;
     padding: 1em 1em 1em 1em;
+    margin: 0;
+}
+
+.verticaltext {
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    font-family: "Source Code Pro", monospace;
+    font-size: 2em;
+    color: #bfcdd6;
+}
+
+
+h1 {
+    color: #f3ec76;
+    margin: 0 0 0 2em;
+    font-size: 4em;
+    position: relative;
+    font-family: "Expletus Sans", serif;
+}
+
+h1:after {
+    content: attr(data-shadow-text);
+    color: rgba(8, 145, 249, 0.4);
+    mix-blend-mode: multiply;
+    top: 5px;
+    left: 5px;
+    position: absolute;
 }
 
