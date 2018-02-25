@@ -23,6 +23,26 @@ dl {
     margin: 0;
 }
 
+.foldedcorner {
+    position: relative;
+    padding: 2em;
+    background: linen;
+    background: linear-gradient(-150deg, transparent 1.5em, linen 0);
+}
+
+.foldedcorner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.1) 0, rgba(0,0,0,.2)) 100% 0 no-repeat;
+    width: 1.73em;
+    height: 3em;
+    transform: translateY(-1.3em) rotate(-30deg);
+    transform-origin: bottom right;
+    box-shadow: -0.3em 0.3em 0.5em -0.1em rgba(0,0,0,0.1);
+}
+
 .rednav {
     font-family: 'Josefin Sans', serif;
     font-size: 3em;
@@ -45,13 +65,13 @@ dl {
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 1em 0 1em 0;
     margin: 0 1em 2em 0;
-    text-align: right;
 }
 
 .headergrid {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .editorialgrid {
@@ -95,6 +115,14 @@ dl {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 40px;
     margin: 10em;
+}
+
+.contactgrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 100px 100px;
+    margin: 0 10em 0 10em;
 }
 
 .verticaltn {
@@ -152,8 +180,54 @@ dl {
 
 .splash_5 {
     background: url(/images/fishes.jpg) no-repeat;
-    height: 450px;
+    min-height: 450px;
     background-position: center right;
+}
+
+.splashfood {
+    background: url(/images/soup.png) no-repeat;
+    min-height: 700px;
+    background-position: top right;
+}
+
+.splashed {
+    background: url(/images/splash_1.png) no-repeat;
+    background-color: #c71212;
+    background-position: bottom right;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+    .indexheader a {
+        color: white;
+    }
+}
+
+.splashanim {
+    background: url(/images/malz07.gif) no-repeat;
+    min-height: 700px;
+    background-position: top right;
+}
+
+.splashch {
+   background: url(/images/castlehead.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center bottom; 
+    .indexheader a {
+        color: white;
+    }
+}
+
+.splashcon {
+    background: url(/images/oscar2.jpg) no-repeat;
+    min-height: 700px;
+    background-position: top right;
+}
+
+.splashdeco {
+    background: url(/images/std.jpg) no-repeat;
+    min-height: 800px;
+    background-position: top right;
 }
 
 .tned {
@@ -243,6 +317,14 @@ dl {
 	background-repeat: no-repeat;
 }
 
+.giantmail {
+    text-decoration: none;
+    color: rgba(8, 145, 249, 0.4);
+    font-family: 'VT323', monospace; 
+    font-size: 5em; 
+    line-height: .8;
+}
+
 a:hover {
     color: #c71212;
     background-size: 100% 1px;
@@ -302,9 +384,16 @@ footer {
     margin: 0 40px 0 0;
 }
 
+.indexheader {
+    color: black;
+    font-family: "Josefin Sans", serif;
+    font-size: 3em;
+    margin: 20px 40px 0 0;
+} 
+
 h1 {
     color: #f3ec76;
-    margin: 0 0 0 2em;
+    margin: 0.5rem 4rem 0 0;
     font-size: 4em;
     position: relative;
     font-family: "Josefin Sans", serif;
@@ -324,14 +413,14 @@ h1:after {
 
 .animtype {
     color: rgba(8, 145, 249, 0.4);
-    font-size: 5em;
+    font-size: 8em;
     font-family: "VT323", monospace;
     width: 10ch;
-    animation:  animtype 4s steps(10);
-                caret 1s steps(1);
+    animation:  animtype 4.5s steps(10), caret 1s 4.5s steps(1) 3;
     white-space: nowrap;
     overflow: hidden;
-    animation-iteration-count: infinite;
+    border-right: 10px solid;
+    border-color: transparent;
 }
 
 @keyframes animtype {
@@ -339,6 +428,6 @@ h1:after {
 }
 
 @keyframes caret {
-    50% { border-color: transparent; }
+    50% { border-color: rgba(8, 145, 249, 0.4); }
 }
 
