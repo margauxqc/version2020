@@ -6,6 +6,12 @@ dd {
     hyphens: auto;
 }
 
+.ddleftalign {
+    margin: 0;
+    text-align: left;
+    hyphens: auto;
+}
+
 .ddquote {
     margin: 0;
     text-align: center;
@@ -17,12 +23,18 @@ dd:before {
     white-space: pre;
 }
 
-dl {
+.dllinen {
     background: linen;
+}
+
+.dlwhite {
+    color: white;
+}
+
+dl {
     padding: 1em 1em 1em 1em;
     margin: 0;
 }
-
 .foldedcorner {
     position: relative;
     padding: 2em;
@@ -64,7 +76,7 @@ dl {
     border-top: 1px solid rgba(0,0,0,.2);
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 1em 0 1em 0;
-    margin: 0 1em 2em 0;
+    margin: 3em 0 0 0;
 }
 
 .headergrid {
@@ -154,39 +166,18 @@ dl {
     height: 10px;
     width: 100%;
 }
-	
-
-.splash_2 {
-    background: url(/images/castlehead.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-position: center bottom;
-}
-
-.splash_3 {
-    background: url(/images/malz1a.gif) no-repeat;
-    height: 400px;
-    background-position: center bottom;
-    border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.splash_4 {
-    background: url(/images/headerhouse.png) no-repeat;
-    height: 400px;
-    background-color: #3c4a51;
-    background-position: right bottom;
-    border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.splash_5 {
-    background: url(/images/fishes.jpg) no-repeat;
-    min-height: 450px;
-    background-position: center right;
-}
 
 .splashfood {
     background: url(/images/soup.png) no-repeat;
     min-height: 700px;
+    background-position: top right;
+    [data-bgclass="splashfood"] a {
+        color: #c71212;
+    }
+}
+.splashfood2 {
+    background: url(/images/soup.png) no-repeat;
+    min-height: 470px;
     background-position: top right;
 }
 
@@ -200,11 +191,22 @@ dl {
     .indexheader a {
         color: white;
     }
+    [data-bgclass="splashed"] a {
+        color: black;
+    }
 }
 
 .splashanim {
     background: url(/images/malz07.gif) no-repeat;
     min-height: 700px;
+    background-position: top right;
+    [data-bgclass="splashanim"] a {
+        color: #c71212;
+    }
+}
+.splashanim2 {
+    background: url(/images/malz07.gif) no-repeat;
+    min-height: 470px;
     background-position: top right;
 }
 
@@ -216,17 +218,43 @@ dl {
     .indexheader a {
         color: white;
     }
+    [data-bgclass="splashch"] a {
+        color: black;
+    }
 }
 
 .splashcon {
     background: url(/images/oscar2.jpg) no-repeat;
-    min-height: 700px;
-    background-position: top right;
+    background-size: cover;
+    background-position: center top; 
+    .indexheader a {
+        color: white;
+    }
+    [data-bgclass="splashcon"] a {
+        color: black;
+    }
+}
+
+
+.splashcon2 {
+    background: url(/images/oscar2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    min-height: 500px;
 }
 
 .splashdeco {
     background: url(/images/std.jpg) no-repeat;
     min-height: 800px;
+    background-position: top right;
+    [data-bgclass="splashdeco"] a {
+        color: #c71212;
+    }
+}
+
+.splashdeco2 {
+    background: url(/images/std.jpg) no-repeat;
+    min-height: 600px;
     background-position: top right;
 }
 
@@ -241,8 +269,8 @@ dl {
     color: #424e54;
 	text-decoration: none;
 	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
+    background-size: 0% 2px;
+    background-position: left bottom;
 	text-shadow: .05em 0 #798ba9, -.05em 0 #798ba9;
 	transition-property: background-size;
 	transition-duration: .4s;
@@ -250,18 +278,45 @@ dl {
 	background-repeat: no-repeat;
 }
 
+.awhitetext {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(black, black) no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition-property: background-size;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    background-repeat: no-repeat;
+    margin: 0 1em 0 0;
+}
+
 .awhite {
     text-decoration: none;
     color: #424e54;
 	text-decoration: none;
 	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
+    background-size: 0% 2px;
+    background-position: left bottom;
 	text-shadow: .05em 0 white, -.05em 0 white;
 	transition-property: background-size;
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
 	background-repeat: no-repeat;
+}
+.amenu {
+    text-decoration: none;
+    color: #424e54;
+    text-decoration: none;
+    background: linear-gradient(#424e54, #424e54) no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition-property: background-size;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    background-repeat: no-repeat;
+    margin: 0 1em 0 0;
 }
 
 .anodescend {
@@ -269,8 +324,8 @@ dl {
     color: #424e54;
 	text-decoration: none;
 	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
+    background-size: 0% 2px;
+    background-position: left bottom;
 	transition-property: background-size;
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
@@ -282,8 +337,8 @@ dl {
     color: white;
 	text-decoration: none;
 	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
+    background-size: 0% 2px;
+    background-position: left bottom;
 	transition-property: background-size;
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
@@ -294,22 +349,14 @@ dl {
     text-decoration: none;
     color: black;
 	text-decoration: none;
-	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
-	transition-property: background-size;
-	transition-duration: .4s;
-	transition-timing-function: ease-out;
-	background-repeat: no-repeat;
 }
 
 .alinen {
-    text-decoration: none;
     color: #424e54;
 	text-decoration: none;
 	background: linear-gradient(#424e54, #424e54) no-repeat;
-	background-size: 0% 1px;
-	background-position: 0 1.15em;
+    background-size: 0% 2px;
+    background-position: left bottom;
 	text-shadow: .05em 0 linen, -.05em 0 linen;
 	transition-property: background-size;
 	transition-duration: .4s;
@@ -320,14 +367,11 @@ dl {
 .giantmail {
     text-decoration: none;
     color: rgba(8, 145, 249, 0.4);
-    font-family: 'VT323', monospace; 
-    font-size: 5em; 
-    line-height: .8;
 }
 
 a:hover {
     color: #c71212;
-    background-size: 100% 1px;
+    background-size: 100% 2px;
 }
 
 .verticalbig {
@@ -421,6 +465,7 @@ h1:after {
     overflow: hidden;
     border-right: 10px solid;
     border-color: transparent;
+    margin: .3em 0 0 0;
 }
 
 @keyframes animtype {
@@ -430,4 +475,118 @@ h1:after {
 @keyframes caret {
     50% { border-color: rgba(8, 145, 249, 0.4); }
 }
+
+@media screen and (max-width: 1000px) {
+    .giantgrid {
+        margin: 1em;
+    }
+    .heidigrid {
+        margin: 1em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .borderline {
+        margin: 5em 0 0 0;
+        align-self: start !important;
+    }
+    .blackheader {
+        font-size: 2em;
+    }
+    .rednav {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .giantgrid {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em;
+    }
+    .heidigrid {
+        margin: 0.5em;
+    }
+    .flash {
+        display: none;
+    }
+    .headergrid {
+        display: flex;
+        flex-direction: column;
+    }
+    h1.indexheader {
+        margin: 0 0 .5 0;
+        font-size: 2em;
+    }
+    .pcontact {
+        align-self: start !important;
+    }
+    .imglogo {
+        align-self: start !important;
+    }
+    .splashanim2 {
+        background: none;
+    }
+    .splashdeco2 {
+        background: none;
+    }
+    .splashfood2 {
+        background: none;
+    }
+    .splashcon2 {
+        background: none;
+    }
+    .splash_1 {
+        background: none;
+        background-color: white;
+        height: auto;
+    }
+    .splash_1:after {
+        display: none;
+    }
+
+    .awhitetext {
+        color: black;
+    }
+    .dlwhite {
+        display: none;
+    }
+    .dlblackmenu {
+        display: none;
+    }
+    .dlcontact { 
+        margin: 0 0 0 1em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .cbheader {
+        margin: 0;
+        font-size: 2em;
+        color: black;
+    }
+    .blackheader {
+        font-size: 2em;
+    }
+    .rednav {
+        color: black;
+        font-size: 2em;
+    }
+    .borderline {
+        margin: 1em 0 0 0;
+    }
+    .animtype {
+        font-size: 5em;
+        margin: 0 0 0 .2em;
+    }   
+    .imgprofile{
+        width: 60%;
+        margin: 1em;
+    } 
+    .amenu {
+        margin: 0 0 0 2em;
+    }
+
+}
+
 
