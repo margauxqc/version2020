@@ -76,7 +76,7 @@ dl {
     border-top: 1px solid rgba(0,0,0,.2);
     border-bottom: 1px solid rgba(0,0,0,.2);
     padding: 1em 0 1em 0;
-    margin: 3em 0 0 0;
+    margin: 4em 0 0 0;
 }
 
 .headergrid {
@@ -84,13 +84,6 @@ dl {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-}
-
-.editorialgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
 }
 
 .heidigrid {
@@ -109,7 +102,6 @@ dl {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
     margin: 10em;
 }
 
@@ -125,7 +117,6 @@ dl {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 40px;
     margin: 10em;
 }
 
@@ -496,6 +487,13 @@ h1:after {
     .rednav {
         font-size: 2em;
     }
+    .animtype {
+        font-size: 4em;
+        margin: 1em 0 0 0;
+    }   
+    .topmenu {
+        margin: 1em 0 0 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -573,18 +571,18 @@ h1:after {
         font-size: 2em;
     }
     .borderline {
-        margin: 1em 0 0 0;
+        margin: 1em 0 0 1em;
     }
     .animtype {
-        font-size: 5em;
+        font-size: 4em;
         margin: 0 0 0 .2em;
     }   
     .imgprofile{
         width: 60%;
         margin: 1em;
     } 
-    .amenu {
-        margin: 0 0 0 2em;
+    .topmenu {
+        margin: 0 0 0 1em;
     }
 
 }
