@@ -498,6 +498,9 @@ h1:after {
     .topmenu {
         margin: 1em 0 0 0;
     }
+    .inlinegrid {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -506,8 +509,14 @@ h1:after {
         flex-direction: column;
         margin: 0.5em;
     }
+    .inlinegrid {
+        display: block;
+    }
     .heidigrid {
         margin: 0.5em;
+    }
+    .img50 {
+        max-width: 49%;
     }
     .flash {
         display: none;
@@ -529,18 +538,23 @@ h1:after {
     }
     .splashanim2 {
         background: none;
+        height: auto;
     }
     .splashch {
         background: none;
+        height: auto;
     }
     .splashdeco2 {
         background: none;
+        height: auto;
     }
     .splashfood2 {
         background: none;
+        height: auto;
     }
     .splashcon2 {
         background: none;
+        height: auto;
     }
     .splash_1 {
         background: none;
