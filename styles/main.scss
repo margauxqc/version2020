@@ -202,7 +202,7 @@ dl {
 }
 
 .splashch {
-   background: url(/images/castlehead.jpg) no-repeat;
+    background: url(/images/castlehead.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
     background-position: center bottom; 
@@ -353,6 +353,18 @@ dl {
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
 	background-repeat: no-repeat;
+}
+.afooter {
+    color: #424e54;
+    text-decoration: none;
+    background: linear-gradient(#424e54, #424e54) no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    text-shadow: .05em 0 linen, -.05em 0 linen;
+    transition-property: background-size;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+    background-repeat: no-repeat;
 }
 
 .giantmail {
@@ -536,25 +548,63 @@ h1:after {
     .imglogo {
         align-self: start !important;
     }
+    .splashed {
+        background: none;
+        height: auto;
+        .indexheader a {
+        color: black;
+        }
+        [data-bgclass="splashed"] a {
+        color: #c71212;
+        }
+    }
     .splashanim2 {
+        background: none;
+        min-height: 0;
+    }
+    .splashanim {
         background: none;
         height: auto;
     }
     .splashch {
         background: none;
         height: auto;
+        .indexheader a {
+        color: black;
+        }
+        [data-bgclass="splashch"] a {
+        color: #c71212;
+        }
     }
     .splashdeco2 {
         background: none;
-        height: auto;
+        min-height: 0;
+    }
+    .splashdeco {
+        background: none;
+        min-height: 0;
     }
     .splashfood2 {
+        background: none;
+        min-height: 0;
+    }
+    .splashfood {
         background: none;
         height: auto;
     }
     .splashcon2 {
         background: none;
+        min-height: 0;
+    }
+    .splashcon {
+        background: none;
         height: auto;
+        .indexheader a {
+        color: black;
+        }
+        [data-bgclass="splashcon"] a {
+        color: #c71212;
+        }
     }
     .splash_1 {
         background: none;
