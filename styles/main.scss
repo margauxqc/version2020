@@ -34,6 +34,7 @@ dd:before {
 .dlblackmenu {
     position: sticky;
     top: 20px;
+    margin: -300px 0 0 0;
 }
 
 dl {
@@ -518,6 +519,13 @@ h1:after {
     .inlinegrid {
         display: block;
     }
+    .dlblackmenu {
+        margin: 0;
+    }
+    .imgwidth {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -660,6 +668,10 @@ h1:after {
     } 
     .topmenu {
         margin: 0 0 0 1em;
+    }
+    .imgwidth {
+        width: 100%;
+        height: 100%;
     }
 
 }
