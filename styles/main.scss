@@ -471,6 +471,7 @@ h1:after {
 .animtype {
     color: rgba(8, 145, 249, 0.4);
     font-size: 8em;
+    font-weight: normal;
     font-family: "VT323", monospace;
     width: 10ch;
     animation:  animtype 4.5s steps(10), caret 1s 4.5s steps(1) 3;
