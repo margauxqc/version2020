@@ -112,14 +112,17 @@ dl {
 }
 
 .imgwidth {
-	max-width: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 .imgshadow {
 	max-width: 100%;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.2));
+    object-fit: contain;
 }
 .imggif {
-	max-width: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .orlandogrid {
@@ -211,7 +214,7 @@ dl {
 }
 
 .splashch {
-    background: url(/images/castlehead.jpg) no-repeat;
+    background: url(/images/castlehead.jpg) no-repeat, linear-gradient(to bottom, #263d4b 0%,#273e4e 1%,#243e4d 1%,#273e4e 1%,#283f4d 2%,#294050 3%,#283f4d 3%,#2b4552 8%,#2c4655 8%,#2e4553 9%,#2c4655 9%,#2e4857 12%,#314858 13%,#2e4857 13%,#385462 23%,#385462 26%,#3b5868 30%,#405c68 39%,#3f5c6a 41%,#435f6d 44%,#425e6a 53%,#455f6c 54%,#45616d 57%,#4b6572 59%,#56717c 62%,#637984 65%,#6e848f 67%,#6d838e 67%,#748893 68%,#758992 68%,#82949e 71%,#8496a0 71%,#83959f 71%,#8597a1 71%,#8b9ea5 73%,#c7d0d5 83%,#dce4e7 87%,#ecf0f3 89%,#f5f6f8 91%,#fdfdfd 94%,#ffffff 100%);
     background-size: cover;
     height: 100vh;
     background-position: center bottom; 
@@ -256,6 +259,16 @@ dl {
     background: url(/images/std.jpg) no-repeat;
     min-height: 600px;
     background-position: top right;
+}
+
+
+
+.splashclient2 {
+    background: url(/images/clientsplash.jpg) no-repeat, linear-gradient(103deg, rgb(97, 122, 251) 0%, rgb(137, 143, 191) 48%, rgb(94, 122, 248) 83%);
+    background-size: cover;
+    background-position: center; 
+    min-height: 500px;
+    max-height: 800px;
 }
 
 .tned {
@@ -404,10 +417,6 @@ body {
     margin: 0;
 }
 
-img {
-  
-}
-
 footer {
 	background-color: Linen;
 	bottom: 0;
@@ -432,6 +441,7 @@ footer {
 
 .cbheader {
     color: white;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.3));
     font-family: "Josefin Sans", serif;
     font-size: 3em;
     margin: 0 40px 0 0;
@@ -543,6 +553,7 @@ h1:after {
     }
     .img50 {
         max-width: 49%;
+        object-fit: contain;
     }
     .flash {
         display: none;
@@ -673,9 +684,11 @@ h1:after {
     .imgwidth {
         width: 100%;
         height: 100%;
+        object-fit: contain;
     }
     .imggif {
         max-width: 70%;
+        object-fit: contain;
     }
 
 }
