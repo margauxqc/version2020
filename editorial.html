@@ -12,14 +12,14 @@
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Amaranth:700|Josefin Sans|VT323|Magra:700|Merriweather+Sans:700" rel="stylesheet">
     </head>
-    <body>
+    <body><div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 
 
-        <div class="splashclient2 headergrid">
+        <div class="splashclient2 headergrid" id="anchortop">
                 <p class="topmenu" style="color: white; grid-row: 1; grid-column: 3 / span 4;">
                     <a class="awhitetext" href="animation.html">ANIMATION </a>
                     <a class="awhitetext" href="editorial.html">EDITORIAL</a>
@@ -33,24 +33,57 @@
                 <a href="index.html"><img style="max-width: 300px;" src="images/title1.png"></a>
                 
                 <div  style="grid-row: 1; grid-column:3 / span 4; align-self: end;" class="borderline">
-                    <div class="cbheader">EDITORIAL CLIENT</div>
+                    <div class="cbheader">EDITORIAL ILLUSTRATION</div>
                    <a class="awhitetext" style="margin: 0 40px 0 0;" href="index.html">Main Index</a>
                 </div> 
             </div>
             <div class="dlblackmenu">
                 <dl>
-                    <dd><a class="awhitetext" href="#anchor2">Backstage Magazine</a></dd>
-                    <!--<dd><a class="awhitetext" href="#anchor1">LondonTheatre.co.uk <br /> Spot the Musicals!</a></dd>-->
+                    <dd><a class="anodescend" href="#anchor1">Most Recent</a></dd>
+                    <dd><a class="anodescend" href="#anchor2">Pioneers of Tech</a></dd>
+                    <dd><a class="anodescend" href="#anchor3">Backstage<br />Magazine</a></dd>
+                    <dd><a class="anodescend" href="#anchortop">^</a></dd>
                 </dl>
             </div>
         <div class="giantgrid" style="padding-top: 7em;" id="anchor1">
-                <img  class="imgshadow" style="grid-row: 1; grid-column: span 8" src="images/backstage_328.jpg" alt="backstage magazine first day on set, illustration.">
+                <img  class="imgshadow" style="grid-row: 1; grid-column: span 8" src="images/backstage_0411.jpg" alt="backstage magazine ready for the long haul, illustration.">
                 <dl class="dllinen" style="grid-row: 2; grid-column: 1 / span 4; align-self: end;">
                 <dt>Client: Backstage Magazine</dt>
+                <dt>Article: "Are You Ready for the Long Haul" April 2019</dt>
+                <dt>Michael B. Jordan</dt>
+                </dl>
+                <!--<img  class="imgshadow" style="grid-row: 3; grid-column: span 8" src="images/backstage_328.jpg" alt="backstage magazine first day on set, illustration.">
+                <dl class="dllinen" style="grid-row: 4; grid-column: 1 / span 4; align-self: end;">
+                <dt>Client: Backstage Magazine</dt>
                 <dt>Article: "First Day on Set" March 2019</dt>
+                </dl>-->
+                <img  class="imgshadow" style="grid-row: 5; grid-column: span 8" src="images/backstage_0314.jpg" alt="backstage magazine talking socially, illustration.">
+                <dl class="dllinen" style="grid-row: 6; grid-column: 1 / span 4; align-self: end;">
+                <dt>Client: Backstage Magazine</dt>
+                <dt>Article: "Talking Socially" March 2019</dt>
+                </dl>
+                <img  class="imgshadow" style="grid-row: 7; grid-column: span 8" src="images/backstage_0228.jpg" alt="backstage magazine know your words, illustration.">
+                <dl class="dllinen" style="grid-row: 8; grid-column: 1 / span 4; align-self: end;">
+                <dt>Client: Backstage Magazine</dt>
+                <dt>Article: "Know Your Words" February 2019</dt>
                 </dl>
         </div>
-        <div class="giantgrid" style="padding-top: 7em;" id="">
+        <div class="giantgrid inlinegrid" id="anchor2">
+                <img style="grid-row: 3; grid-column: 1 / span 4; align-self: flex-end;" src="images/ed1.jpg" alt="Pioneers of Tech, illustration.">
+                <dl class="dllinen" style="grid-row: 1; grid-column: 3 / span 3;">
+                <dt>Pioneers of Tech</dt>
+                <dd>From left to right:</dd>
+                <dt>Alan Turing, Lady Ada Lovelace, Tim Berners-Lee, Charles Babbage and Grace Hopper.</dt>
+                </dl>
+                <img class="imgwidth" style="grid-row: 1; grid-column: 1; align-self: end;" src="images/babbage.png" alt="Charles Babbage (1791-1871), illustration.">
+                <img  class="imgwidth" style="grid-row: 1; grid-column: 2; align-self: end;" src="images/lovelace.png" alt="Ada, Countess of Lovelace (1815-1852), illustration.">
+                <img  style="grid-row: 2; grid-column: 1; max-width: 120%; align-self: end;" src="images/goedel.png" alt="Kurt Friederich Gödel (1906-1978), illustration.">
+                <img class="imgwidth" style="grid-row: 2; grid-column: 2; align-self: end;" src="images/hopper.png" alt="Grace Hopper (1906-1992), illustration.">
+                <img class="imgwidth" style="grid-row: 2; grid-column: 3; align-self: end;" src="images/turing.png" alt="Alan Turing (1912-1954), illustration.">
+                <img class="imgwidth" style="grid-row: 2; grid-column: 4; align-self: end;" src="images/lamarr.png" alt="Hedy Lamarr (1914-2000), illustration.">
+                <img class="imgwidth" style="grid-row: 2; grid-column: 5; align-self: end;" src="images/timbl.png" alt="Tim Berners-Lee (TimBL) (1955-), illustration.">
+        </div>
+        <div class="giantgrid" style="padding-top: 7em;" id="anchor3">
             <img  class="imgshadow" style="grid-row: 1; grid-column: span 8" src="images/backstage.jpg" alt="backstage magazine open call for all, illustration.">
             <dl class="dllinen" style="grid-row: 2; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
@@ -88,11 +121,11 @@
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Why You Should Celebrate Other Actors—Even Your Competition" May 2018</dt>
             </dl>
-            <img  class="imgshadow" style="grid-row: 15; grid-column: span 8" src="images/backstage_9a.jpg" alt="backstage magazine master memorization, illustration.">
+            <!--<img  class="imgshadow" style="grid-row: 15; grid-column: span 8" src="images/backstage_9a.jpg" alt="backstage magazine master memorization, illustration.">
             <dl class="dllinen" style="grid-row: 16; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Why You Should Be Off-Book for Every Single Audition" May 2018</dt>
-            </dl>
+            </dl>-->
             <img  class="imgshadow" style="grid-row: 17; grid-column: span 8" src="images/backstage_10.jpg" alt="backstage magazine why casting directors waste time, illustration.">
             <dl class="dllinen" style="grid-row: 18; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
@@ -108,11 +141,11 @@
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "What's Casting Alt 1" June 2018</dt>
             </dl>
-            <img  class="imgshadow" style="grid-row: 23; grid-column: span 8" src="images/backstage_casting_1.jpg" alt="backstage magazine crying scene, illustration.">
+            <!--<img  class="imgshadow" style="grid-row: 23; grid-column: span 8" src="images/backstage_casting_1.jpg" alt="backstage magazine crying scene, illustration.">
             <dl class="dllinen" style="grid-row: 24; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "What's Casting Alt 2" June 2018</dt>
-            </dl>
+            </dl>-->
             <img  class="imgshadow" style="grid-row: 25; grid-column: span 8" src="images/backstage_casting_3.jpg" alt="backstage magazine crying scene, illustration.">
             <dl class="dllinen" style="grid-row: 26; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
@@ -133,11 +166,11 @@
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Find Joy in Your Performance" August 2018</dt>
             </dl>
-            <img  class="imgshadow" style="grid-row: 33; grid-column: span 8" src="images/backstage_15.jpg" alt="backstage magazine summer vacation, illustration.">
+            <!--<img  class="imgshadow" style="grid-row: 33; grid-column: span 8" src="images/backstage_15.jpg" alt="backstage magazine summer vacation, illustration.">
             <dl class="dllinen" style="grid-row: 34; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Summer Vacation" August 2018</dt>
-            </dl>
+            </dl>-->
             <img  class="imgshadow" style="grid-row: 35; grid-column: span 8" src="images/backstage_16.jpg" alt="backstage magazine dollars and sense, illustration.">
             <dl class="dllinen" style="grid-row: 36; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
@@ -148,11 +181,11 @@
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Tape Your Own Audition" September 2018</dt>
             </dl>
-            <img  class="imgshadow" style="grid-row: 39; grid-column: span 8" src="images/backstage_18.jpg" alt="backstage magazine the written word, illustration.">
+            <!--<img  class="imgshadow" style="grid-row: 39; grid-column: span 8" src="images/backstage_18.jpg" alt="backstage magazine the written word, illustration.">
             <dl class="dllinen" style="grid-row: 40; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "The Written Word" October 2018</dt>
-            </dl>
+            </dl>-->
             <img  class="imgshadow" style="grid-row: 41; grid-column: span 8" src="images/backstage_19.jpg" alt="backstage magazine fall tv, illustration.">
             <dl class="dllinen" style="grid-row: 42; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
@@ -163,30 +196,43 @@
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Accents" November 2018</dt>
             </dl>
-            <img  class="imgshadow" style="grid-row: 45; grid-column: span 8" src="images/backstage_21.jpg" alt="backstage magazine multi-hyphenate, illustration.">
+            <!--<img  class="imgshadow" style="grid-row: 45; grid-column: span 8" src="images/backstage_21.jpg" alt="backstage magazine multi-hyphenate, illustration.">
             <dl class="dllinen" style="grid-row: 46; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Multi-Hyphenate" November 2018</dt>
-            </dl>
+            </dl>-->
             <img  class="imgshadow" style="grid-row: 47; grid-column: span 8" src="images/backstage_22.jpg" alt="backstage magazine Disney, illustration.">
             <dl class="dllinen" style="grid-row: 48; grid-column: 1 / span 4; align-self: end;">
             <dt>Client: Backstage Magazine</dt>
             <dt>Article: "Disney Voiceacting" November 2018</dt>
             </dl>
-            
+            <img  class="imgshadow" style="grid-row: 49; grid-column: span 8" src="images/backstage_1220.jpg" alt="backstage magazine holiday self-care, illustration.">
+            <dl class="dllinen" style="grid-row: 50; grid-column: 1 / span 4; align-self: end;">
+            <dt>Client: Backstage Magazine</dt>
+            <dt>Article: "Holiday Self-Care" December 2018</dt>
+            </dl>
+            <img  class="imgshadow" style="grid-row: 51; grid-column: span 8" src="images/backstage_0117.jpg" alt="backstage magazine sides or no sides, illustration.">
+            <dl class="dllinen" style="grid-row: 52; grid-column: 1 / span 4; align-self: end;">
+            <dt>Client: Backstage Magazine</dt>
+            <dt>Article: "Sides or No Sides?" January 2019</dt>
+            </dl>
+            <img  class="imgshadow" style="grid-row: 53; grid-column: span 8" src="images/backstage_0131.jpg" alt="backstage magazine playing the room, illustration.">
+            <dl class="dllinen" style="grid-row: 54; grid-column: 1 / span 4; align-self: end;">
+            <dt>Client: Backstage Magazine</dt>
+            <dt>Article: "Playing the Room" January 2019</dt>
+            </dl>
+            <img  class="imgshadow" style="grid-row: 55; grid-column: span 8" src="images/backstage_0103.jpg" alt="backstage magazine actor preparation, illustration.">
+            <dl class="dllinen" style="grid-row: 56; grid-column: 1 / span 4; align-self: end;">
+            <dt>Client: Backstage Magazine</dt>
+            <dt>Article: "Actor Preparation" January 2019</dt>
+            </dl>
+            <img  class="imgshadow" style="grid-row: 57; grid-column: span 8" src="images/backstage_0214.jpg" alt="backstage magazine sizing up the sides, illustration.">
+            <dl class="dllinen" style="grid-row: 58; grid-column: 1 / span 4; align-self: end;">
+            <dt>Client: Backstage Magazine</dt>
+            <dt>Article: "Sizing up the Sides" February 2019</dt>
+            </dl>
         </div>
-        <!--
-            <div class="giantgrid" id="anchor1">
-                <img  class="imgwidth" style="grid-row: 1; grid-column: 2 / span 8" src="images/musicals.jpg" alt="London Theatre musicals advertisement, illustration.">
-                <dl class="dllinen" style="grid-row: 2; grid-column: 4 / span 4; align-self: end;">
-                <dt>Client: LondonTheatre.co.uk</dt>
-                <dt>Art Direction: Distilled
-                <dt>Project: Spot the Musicals!</dt>
-                </dl>
-            </div>
-        -->
-       
-    </body>
+    </div>
     <footer>
         <div class="footerinfo">
             <a class="giantmail" href="mailto:quayleart@gmail.com">quayleart@gmail.com</a><br /><br />
@@ -197,4 +243,5 @@
             &copy; 2019 Margaux Quayle Cannon
         </div>
     </footer>
+    </body>
 </html>
