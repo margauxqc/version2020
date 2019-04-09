@@ -178,7 +178,7 @@ dl {
 
 .splashfood {
     background: url(/images/soup.png) no-repeat;
-    min-height: 700px;
+    height: 100vh;
     background-position: top right;
     [data-bgclass="splashfood"] a {
         color: #c71212;
@@ -207,7 +207,7 @@ dl {
 
 .splashanim {
     background: url(/images/malz07.gif) no-repeat;
-    min-height: 700px;
+    height: 100vh;
     background-position: top right;
     [data-bgclass="splashanim"] a {
         color: #c71212;
@@ -253,8 +253,8 @@ dl {
 }
 
 .splashdeco {
-    background: url(/images/std.jpg) no-repeat;
-    min-height: 800px;
+    background: url(/images/std1.jpg) no-repeat;
+    height: 100vh;
     background-position: top right;
     [data-bgclass="splashdeco"] a {
         color: #c71212;
@@ -271,8 +271,7 @@ dl {
     background: url(/images/clientsplash.jpg) no-repeat, linear-gradient(103deg, rgb(97, 122, 251) 0%, rgb(137, 143, 191) 48%, rgb(94, 122, 248) 83%);
     background-size: cover;
     background-position: center; 
-    min-height: 500px;
-    max-height: 800px;
+    height: 100vh;
     [data-bgclass="splashcl"] a {
     color: black;
     }
@@ -472,7 +471,7 @@ footer {
 .indexheader {
     color: black;
     font-family: "Josefin Sans", serif;
-    font-size: 3em;
+    font-size: 2em;
     margin: 20px 40px 0 0;
 } 
 
