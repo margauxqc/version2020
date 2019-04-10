@@ -32,8 +32,9 @@ dd:before {
 
 .dlblackmenu {
     position: sticky;
-    top: 20px;
+    top: 170px;
     margin: -300px 0 0 0;
+    float: left;
 }
 .dlblackmenuspecial {
     position: sticky;
@@ -102,13 +103,13 @@ dl {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1.4fr 1fr 2fr 1.7fr;
-    margin: 10em;
+    margin: 0 10em 5em 10em;
 }
 .giantgrid {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 10em;
+    margin: 0 10em 5em 10em;
 }
 .tngrid {
     display: grid;
@@ -264,7 +265,7 @@ dl {
 
 .splashdeco2 {
     background: url(/images/std1.jpg) no-repeat;
-    min-height: 600px;
+    min-height: 470px;
     background-position: top right;
 }
 
@@ -551,6 +552,7 @@ h1:after {
     .dlblackmenu {
         position: relative;
         padding: 0 0 7em 0;
+        top: 0;
     }
     .dlblackmenuspecial {
         display: none;
@@ -717,9 +719,7 @@ h1:after {
         margin: 0 0 0 1em;
     }
     .imgwidth {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    
     }
     .imggif {
         max-width: 70%;
