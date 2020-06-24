@@ -1,5 +1,10 @@
 ---
 ---
+
+:root {
+  --my-bg-color:rgb(85, 24, 24);
+}
+
 dd {
     margin: 0;
     hyphens: auto;
@@ -53,6 +58,8 @@ dl {
     padding: 2em;
     background: linen;
     background: linear-gradient(-150deg, transparent 1.5em, linen 0);
+    margin-right: 1em;
+    box-shadow: -2px 2px 0.1em 1px rgba(0,0,0,0.1);
 }
 
 .foldedcorner::before {
@@ -92,10 +99,15 @@ dl {
     margin: 4em 0 0 0;
 }
 
+.bordernomargin {
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
 .headergrid {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, minmax(mincontent, 1fr));
     grid-template-rows: 1fr;
 }
 
@@ -156,26 +168,10 @@ dl {
 }
 
 .splash_1 {
-    background: url(/images/splash_1.png) no-repeat;
-    background-color: #c71212;
-    background-position: bottom right;
-    background-size: contain;
-    height: 100vh;
-    position: relative;
-    /*
-    border-bottom: 10px solid transparent;
-    border-image: linear-gradient(black, lightgrey);
-    border-image-slice: 1;
-    */
+    max-height: 300px;
+    background-color: linen;
 }
-.splash_1:after {
-    content:"";
-    position: absolute;
-    background: linear-gradient(grey, lightgrey);
-    bottom: 0;
-    height: 10px;
-    width: 100%;
-}
+
 
 .splashfood {
     background: url(/images/soup.png) no-repeat;
@@ -207,17 +203,18 @@ dl {
 }
 
 .splashanim {
-    background: url(/images/malz07.gif) no-repeat;
-    height: 100vh;
-    background-position: top right;
-    [data-bgclass="splashanim"] a {
-        color: #c71212;
-    }
+    background: url(/images/malz1a.gif) no-repeat;
+    background-position: center right;
+    background-size: 20%;
+    max-height: 300px;
+  
 }
 .splashanim2 {
-    background: url(/images/malz07.gif) no-repeat;
-    min-height: 470px;
-    background-position: top right;
+    background: url(/images/malz1a.gif) no-repeat;
+    background-position: center right;
+    background-size: 20%;
+    max-height: 300px;
+   
 }
 
 .splashch {
@@ -234,57 +231,37 @@ dl {
 }
 
 .splashcon {
-    background: url(/images/oscarsplash.jpg) no-repeat, url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAALAAD/4QNtaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9IkE0NjM4NkQwODYzMEY3Q0I5MTZDMkM4M0YxN0RDRkI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMzE4RkRFNEI5QzExRTlCQkNCODcyQjY4ODJGQUI5IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMzE4RkRENEI5QzExRTlCQkNCODcyQjY4ODJGQUI5IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQjRCRjMzODI0MjE2ODExOEMxNEUzQzc1MzFDQ0MwNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3ZDE5YzY3My0yOGY2LTRhZTYtODdjMC1jNTAwYTdkOGJlOTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7QBIUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAA8cAVoAAxslRxwCAAACAAIAOEJJTQQlAAAAAAAQ/OEfici3yXgvNGI0B1h36//uACFBZG9iZQBkwAAAAAEDABADAgMGAAAFSAAABV0AAAWI/9sAhAAUEBAYERgnFxcnMSUeJTEtJiUlJi09NDQ0NDQ9REBAQEBAQEREREREREREREREREREREREREREREREREREREREARUYGCAbICYYGCY1JiAmNUQ1Kio1REREQTRBRERERERERERERERERERERERERERERERERERERERERERERERERET/wgARCAALABQDASIAAhEBAxEB/8QAcwABAQEBAAAAAAAAAAAAAAAAAAUCBAEAAwAAAAAAAAAAAAAAAAAAAQMEEAAABgMBAAAAAAAAAAAAAAAQAREhAgMAMhMUEQACAQQDAAAAAAAAAAAAAAAAAQIQESFBYaHBEgEAAAAAAAAAAAAAAAAAAAAQ/9oADAMBAAIRAxEAAACN2T6klJko/wD/2gAIAQIAAQUANQ//2gAIAQMAAQUAJA//2gAIAQEAAQUA6Ttl54lBWr2q1bP/2gAIAQICBj8AP//aAAgBAwIGPwA//9oACAEBAQY/ALydxTi87OKP012f/9k=);
+    background: url(/images/angel.png) no-repeat;
+    background-position: center left;
     background-size: cover;
-    background-position: center top; 
-    height: 100vh;
-    .indexheader a {
-        color: white;
-    }
-    [data-bgclass="splashcon"] a {
-        color: black;
-    }
+    max-height: 300px;
+    background-color: linen;
 }
 
 
 .splashcon2 {
-    background: url(/images/oscarsplash.jpg) no-repeat, url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAALAAD/4QNtaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9IkE0NjM4NkQwODYzMEY3Q0I5MTZDMkM4M0YxN0RDRkI0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMzE4RkRFNEI5QzExRTlCQkNCODcyQjY4ODJGQUI5IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMzE4RkRENEI5QzExRTlCQkNCODcyQjY4ODJGQUI5IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQjRCRjMzODI0MjE2ODExOEMxNEUzQzc1MzFDQ0MwNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3ZDE5YzY3My0yOGY2LTRhZTYtODdjMC1jNTAwYTdkOGJlOTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7QBIUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAA8cAVoAAxslRxwCAAACAAIAOEJJTQQlAAAAAAAQ/OEfici3yXgvNGI0B1h36//uACFBZG9iZQBkwAAAAAEDABADAgMGAAAFSAAABV0AAAWI/9sAhAAUEBAYERgnFxcnMSUeJTEtJiUlJi09NDQ0NDQ9REBAQEBAQEREREREREREREREREREREREREREREREREREREREARUYGCAbICYYGCY1JiAmNUQ1Kio1REREQTRBRERERERERERERERERERERERERERERERERERERERERERERERERET/wgARCAALABQDASIAAhEBAxEB/8QAcwABAQEBAAAAAAAAAAAAAAAAAAUCBAEAAwAAAAAAAAAAAAAAAAAAAQMEEAAABgMBAAAAAAAAAAAAAAAQAREhAgMAMhMUEQACAQQDAAAAAAAAAAAAAAAAAQIQESFBYaHBEgEAAAAAAAAAAAAAAAAAAAAQ/9oADAMBAAIRAxEAAACN2T6klJko/wD/2gAIAQIAAQUANQ//2gAIAQMAAQUAJA//2gAIAQEAAQUA6Ttl54lBWr2q1bP/2gAIAQICBj8AP//aAAgBAwIGPwA//9oACAEBAQY/ALydxTi87OKP012f/9k=);
-    background-size: cover;
-    background-position: center top; 
-    min-height: 500px;
+    background: url(/images/angel.png) no-repeat;
+    background-position: top right;
+    max-height: 300px;
+    background-color: linen;
 }
 
-.splashdeco {
-    background: url(/images/std1.jpg) no-repeat;
-    height: 100vh;
-    background-position: top right;
-    [data-bgclass="splashdeco"] a {
-        color: #c71212;
-    }
-}
-
-.splashdeco2 {
-    background: url(/images/std1.jpg) no-repeat;
-    min-height: 470px;
-    background-position: top right;
-}
 
 .splashcl {
-    background: url(/images/clientsplash.jpg) no-repeat, linear-gradient(103deg, rgb(97, 122, 251) 0%, rgb(137, 143, 191) 48%, rgb(94, 122, 248) 83%);
-    background-size: cover;
-    background-position: center; 
-    height: 100vh;
-    [data-bgclass="splashcl"] a {
-    color: black;
-    }
+    background: url(/images/fishbowl.png) no-repeat;
+    background-size: 60%;
+    background-position: top center;
+    max-height: 300px;
+    background-color: linen;
+
 }
 
 .splashcl2 {
-    background: url(/images/clientsplash.jpg) no-repeat, linear-gradient(103deg, rgb(97, 122, 251) 0%, rgb(137, 143, 191) 48%, rgb(94, 122, 248) 83%);
-    background-size: cover;
-    background-position: center; 
-    min-height: 500px;
-    max-height: 800px;
+    background: url(/images/fishbowl.png) no-repeat;
+    background-size: 60%;
+    background-position: top center;
+    max-height: 300px;
+    background-color: linen;
 }
 
 .tned {
@@ -292,6 +269,27 @@ dl {
     grid-row: span 1;
     
 }
+
+.backtab {
+    background: hsla(0,0%,100%,.5);
+    padding: 10px;
+    font-family: "Josefin Sans", serif;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-top: 1px solid rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+}
+
+.fronttab {
+    position: relative;
+    font-family: "Josefin Sans", serif;
+    font-size: 2em;
+    background: hsla(0,0%,100%,.5);
+    padding: 20px 0 0 10px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-top: 1px solid rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+}
+
 
 .aeditorialheader {
     text-decoration: none;
@@ -411,7 +409,7 @@ dl {
 }
 
 a:hover {
-    color: #c71212;
+    color: rgba(8, 145, 249, 1);
     background-size: 100% 2px;
 }
 
@@ -459,8 +457,8 @@ footer {
     color: white;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.3));
     font-family: "Josefin Sans", serif;
-    font-size: 3em;
-    margin: 0 40px 0 0;
+    font-size: 2em;
+    margin: 0 0 0 12px;
 }
 
 .blackheader {
@@ -477,15 +475,13 @@ footer {
     margin: 20px 40px 0 0;
 } 
 
-h1 {
+.shadowtext {
     color: #f3ec76;
-    margin: 0.5rem 4rem 0 0;
-    font-size: 4em;
     position: relative;
     font-family: "Josefin Sans", serif;
 }
 
-h1:after {
+.shadowtext:after {
     content: attr(data-shadow-text);
     color: rgba(8, 145, 249, 0.4);
     mix-blend-mode: multiply;
@@ -499,7 +495,7 @@ h1:after {
 
 .animtype {
     color: rgba(8, 145, 249, 0.4);
-    font-size: 8em;
+    font-size: 4em;
     font-weight: normal;
     font-family: "VT323", monospace;
     width: 10ch;
@@ -509,6 +505,11 @@ h1:after {
     border-right: 10px solid;
     border-color: transparent;
     margin: .3em 0 0 0;
+    align-self: center;
+}
+   
+.topmenu {
+    margin: 20px 20px 0 0;
 }
 
 @keyframes animtype {
@@ -540,10 +541,7 @@ h1:after {
         font-size: 2em;
     }
     .animtype {
-        font-size: 4em;
-        margin: 1em 0 0 0;
-    }   
-    .topmenu {
+        font-size: 2em;
         margin: 1em 0 0 0;
     }
     .inlinegrid {
@@ -716,7 +714,7 @@ h1:after {
         margin: 1em;
     } 
     .topmenu {
-        margin: 0 0 0 1em;
+        margin: 10px 0 0 10px;
     }
     .imgwidth {
     
