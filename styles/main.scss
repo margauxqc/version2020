@@ -114,8 +114,12 @@ dl {
 .heidigrid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1.4fr 1fr 2fr 1.7fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 0 10em 5em 10em;
+
+    .landscape {
+        grid-column-end: span 4;
+    }
 }
 .giantgrid {
     display: grid;
@@ -139,17 +143,18 @@ dl {
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,.2));
     object-fit: contain;
 }
+
+.imgshadowtn {
+    max-width: 100%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,.2));
+    object-fit: contain;
+}
+
 .imggif {
     max-width: 100%;
     object-fit: contain;
 }
 
-.orlandogrid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 10em;
-}
 
 .contactgrid {
     display: grid;
@@ -569,10 +574,6 @@ footer {
     .heidigrid {
         margin: 0.5em;
     }
-    .img50 {
-        max-width: 49%;
-        object-fit: contain;
-    }
     .flash {
         display: none;
     }
@@ -687,6 +688,9 @@ footer {
     .dlcontact { 
         margin: 0 0 0 1em;
     }
+    .dllinen {
+        margin: 10px 0 0 0;
+    }
     h1 {
         font-size: 3em;
     }
@@ -710,20 +714,30 @@ footer {
         margin: 0 0 0 .2em;
     }   
     .imgprofile{
-        width: 60%;
-        margin: 1em;
+        
+        padding: 0 2em 0 2em;
     } 
     .topmenu {
         margin: 10px 0 0 10px;
     }
-    .imgwidth {
-    
-    }
+
     .imggif {
-        max-width: 70%;
         object-fit: contain;
     }
+    .imgshadowtn {
+        margin: 10px 0 0 0;
+    }
+    .imgshadow {
+        margin: 10px 0 0 0;
+    }
+    .heidigrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, min-content); 
 
+        .landscape {
+            grid-column-end: span 3;
+        }
+    }
 }
 
 
