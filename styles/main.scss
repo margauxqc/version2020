@@ -718,7 +718,8 @@ footer {
         padding: 0 2em 0 2em;
     } 
     .topmenu {
-        margin: 10px 0 0 10px;
+        margin: 10px 0 10px 10px;
+        font-style: italic;
     }
 
     .imggif {
@@ -738,6 +739,17 @@ footer {
             grid-column-end: span 3;
         }
     }
+    .backtab {
+        border-bottom: none;
+        border-top: none;
+        padding: 2px 10px 10px 10px;
+    }
+    .fronttab {
+        border-bottom: none;
+        border-top: none;
+        padding: 20px 10px 20px 10px;
+    }
+    
 }
 
 
